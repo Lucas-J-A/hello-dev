@@ -94,6 +94,7 @@
 .card-plan-nacional {
     box-sizing: border-box;
     background-color: var(--plano);
+    width: 20%;
     border-radius: var(--br-10xl);
     transition: 0.9s;
     transition: background 2s,
@@ -333,6 +334,7 @@
     color: white;
     font-weight: bold;
     float: right;
+    margin-left: 5px;
 }
 
 .active:after {
@@ -408,35 +410,73 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 25px;
-    margin-right: 15px;
     border: none !important;
     background: transparent;
-
-
-
-
 }
 
 .socialFixed {
     position: fixed;
     bottom: 120px;
     right: 0;
+    border-radius: 50%;
+}
+
+.plus-fixed,
+.socialFixed {
+    margin-bottom: 25px;
+    margin-right: 45px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    margin-bottom: 25px;
-    margin-right: 15px;
+}
 
+.animebtnsocial:hover {
+    animation: girar 1s;
+}
+
+
+
+.img-anatel-footer {
+    width: 60px;
+    height: auto;
+}
+
+.anim-treme {
+
+    animation: treme 1.3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+.oculto {
+    display: none;
+    transition: transform 1s;
+    animation: socialUp 1s alternate;
 
 
 }
 
 
-.animebtnsocial:hover {
-    animation: girar 1s;
+
+.mostrar {
+    display: block;
+    transition: 1s;
+    transition: transform 1s;
+    animation: socialUp 1s alternate;
+
+}
+
+
+
+
+.anim-expandir {
+
+    animation: ease-in expandir 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes girar {
@@ -455,17 +495,6 @@
     100% {
         transform: scale(1.1);
     }
-}
-
-.img-anatel-footer {
-    width: 60px;
-    height: auto;
-}
-
-.anim-treme {
-
-    animation: treme 1.3s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes treme {
@@ -499,29 +528,6 @@
     }
 }
 
-
-
-
-
-.hide {
-    display: none;
-    transition: transform 1s;
-    animation: socialUp 1s alternate;
-
-
-}
-
-
-
-.show {
-    display: block;
-    transition: 1s;
-    transition: transform 1s;
-    animation: socialUp 1s alternate;
-
-}
-
-
 @keyframes socialUp {
     0% {
         transform: translatey(60px);
@@ -534,11 +540,11 @@
     }
 }
 
-.anim-expandir {
+/*
 
-    animation: ease-in expandir 2s;
-    animation-iteration-count: infinite;
-}
+
+
+
 
 @keyframes expandir {
     0% {
@@ -562,7 +568,7 @@
 
 
 }
-
+*/
 
 
 
@@ -573,6 +579,8 @@
 
 /* Small devices (portrait tablets and large phones, 400px and up) */
 @media only screen and (min-width: 300px) {
+
+
     .max-mao {
         display: none;
 
@@ -620,7 +628,7 @@
     }
 
     .card-plan-nacional {
-        width: 75%;
+        width: 80%;
 
     }
 }
@@ -668,7 +676,7 @@
     }
 
     .header-master {
-        height: 900px
+        height: 700px
     }
 
     .card-plan-nacional {
@@ -694,7 +702,7 @@
     }
 
     .card-plan-nacional {
-        width: 18%;
+        width: 20%;
 
     }
 }

@@ -2,18 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.5,maximum-scale=4">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Hello Celular - Um mundo conectado na palma da sua mão</title>
     <link rel="icon" href="img/fav-icon-hello.png" type="image/png">
     <!-- Bootstrap CSS v5.2.1 -->
-    <link rel="stylesheet" href="style/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/slider.css">
-
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,7 +33,7 @@
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-self-center text-center ">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Início</a>
+                        <a class="nav-link" href="#">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Planos Controle</a>
@@ -49,10 +47,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">F.A.Q.</a>
                     </li>
-                </ul>
 
+                </ul>
                 <a href="https://tim.img.com.br/mapa-cobertura/"
                     class="btn btn-primary  p-1 btnCobertura btn btn-primary btnCobertura ">Cobertura</a>
+
 
             </div>
         </div>
@@ -177,9 +176,11 @@
         <!--card-amigavel-->
         <div class="container-fluid mt-5">
             <div class="row  justify-content-center mb-2">
-                <div class=" card-plan-nacional col-12 col-xl-6">
+                <div class="col-lg-3 col-12 card-plan-nacional ">
                     <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
                     <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                    <span class="text-center ">
+                    </span>
                     <span class="m-4 text-center ">
                         <p class="font-pop">Benefícios do plano:</p>
                     </span>
@@ -262,21 +263,6 @@
             </div>
         </div>
         <!--card-amigavel-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!--Cards Planos-->
         <div class=" container-fluid mt-5 ">
@@ -623,7 +609,7 @@
         </div>
 
         <div class="d-flex flex-column align-middle d-flex  justify-content-center socialFixed ">
-            <div id="iconContainer" class=" hide">
+            <div id="iconContainer" class=" oculto">
                 <div class="p-2"><a class="" href="https://www.instagram.com/meuhello/" target="_blank"><i
                             target="_blank" class="bi bi-instagram link-dark fs-1"></i></a></div>
                 <div class="p-2"><a
@@ -643,7 +629,7 @@
 
 
 
-        <script src="script/bootstrap.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="script/script.js"></script>
 
 </body>
