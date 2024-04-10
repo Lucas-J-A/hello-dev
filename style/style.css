@@ -403,7 +403,8 @@
 
 .footer {
     background: var(--gradient-3);
-    height: auto;
+    width: 100% !important;
+
 }
 
 
@@ -593,7 +594,9 @@
 
 /* Small devices (portrait tablets and large phones, 400px and up) */
 @media only screen and (min-width: 300px) {
-
+    body {
+        width: 100%;
+    }
 
     .max-mao {
         display: none;
