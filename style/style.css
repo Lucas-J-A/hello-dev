@@ -334,7 +334,6 @@
     color: white;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
 }
 
 .active:after {
