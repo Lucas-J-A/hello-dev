@@ -406,21 +406,27 @@
     height: auto;
 }
 
+
+
 .plus-fixed {
+
     position: fixed;
     bottom: 0;
     right: 0;
     border: none !important;
     background: transparent;
     color: var(--color-white);
-
+    box-sizing: border-box;
 }
+
+
 
 .socialFixed {
     position: fixed;
     bottom: 120px;
     right: 0;
     border-radius: 50%;
+    box-sizing: border-box;
 
 }
 
@@ -431,8 +437,8 @@
 
 .plus-fixed,
 .socialFixed {
-    margin-bottom: 25px;
-    margin-right: 45px;
+    margin-bottom: 15px;
+    margin-right: 25px;
     width: 50px;
     height: 50px;
 
@@ -549,7 +555,6 @@
     }
 }
 
-/*
 
 
 
@@ -577,7 +582,7 @@
 
 
 }
-*/
+
 
 
 
@@ -640,6 +645,14 @@
         width: 80%;
 
     }
+
+    .socialFixed {
+
+        bottom: 100px;
+        right: -5px;
+
+
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -664,6 +677,14 @@
 
     }
 
+    .socialFixed {
+        position: fixed;
+        bottom: 120px;
+        right: 0;
+        border-radius: 50%;
+        box-sizing: border-box;
+
+    }
 
 }
 
