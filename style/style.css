@@ -94,7 +94,6 @@
 .card-plan-nacional {
     box-sizing: border-box;
     background-color: var(--plano);
-    width: 20%;
     border-radius: var(--br-10xl);
     transition: 0.9s;
     transition: background 2s,
@@ -621,7 +620,7 @@
     }
 
     .card-plan-nacional {
-        width: 60%;
+        width: 100%;
 
     }
 }
@@ -644,7 +643,7 @@
     }
 
     .card-plan-nacional {
-        width: 50%;
+        width: 80%;
 
     }
 
