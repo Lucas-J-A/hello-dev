@@ -8,9 +8,7 @@
 }
 
 .slider {
-
-    animation: slidein 25s linear infinite;
-
+    animation: 15s linear 1s infinite slidein;
     white-space: nowrap;
 
 
@@ -21,11 +19,13 @@
         margin: 0px 0;
 
         .fab {
-            width: 25%;
-            animation: fade-in 0.1s forwards;
+            width: 15%;
+            animation: fade-in 1s forwards;
 
         }
     }
+
+
 }
 
 @keyframes slidein {
@@ -48,3 +48,20 @@
     }
 }
 
+@media only screen and (min-width: 300px) {
+    .slider {
+        animation: 15s linear 1s infinite slidein;
+        white-space: nowrap;
+
+        .logos {
+            height: auto;
+            width: 100vw;
+            display: inline-block;
+            margin: 0px 0;
+
+        }
+
+
+    }
+
+}
