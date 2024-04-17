@@ -507,7 +507,7 @@
 
 	.anim-expandir {
 
-		animation: ease-in expandir 2s;
+		animation: alternate expandir 1.8s;
 		animation-iteration-count: infinite;
 	}
 
@@ -523,6 +523,7 @@
 		50% {
 			transform: scale(1);
 		}
+
 
 		100% {
 			transform: scale(1.1);
@@ -590,8 +591,12 @@
 			transform: scale(1);
 		}
 
-		100% {
+		75% {
 			transform: scale(1.1);
+		}
+
+		100% {
+			transform: scale(1.2);
 		}
 
 
@@ -599,11 +604,3 @@
 
 
 	}
-
-
-
-
-	/*Plugin Menu expansivel circulo*/
-
-
-	/*-------------------------------*/
