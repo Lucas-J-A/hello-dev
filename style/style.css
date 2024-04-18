@@ -299,6 +299,37 @@
 
 	}
 
+	/*Carrosel*/
+	.carousel {
+		display: flex;
+	}
+
+	.active {
+		background: none !important;
+	}
+
+	.carousel-inner {
+		display: flex;
+		justify-content: space-between !important;
+		align-items: center !important;
+	}
+
+	.card-plan-nacional-desktop {
+		display: none;
+	}
+
+	.card-plan-nacional-cel {
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
 	.hello-bg {
 
 		top: -500px;
