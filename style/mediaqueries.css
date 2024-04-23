@@ -66,6 +66,11 @@
 		.card-plan-nacional-cel {
 			display: block;
 		}
+
+		.container__Cadastro {
+			height: auto;
+		}
+
 	}
 
 	@media only screen and (min-width: 600px) {
@@ -99,6 +104,8 @@
 
 		}
 
+
+
 	}
 
 	/* Medium devices (landscape tablets, 768px and up) */
@@ -130,6 +137,8 @@
 		.card-plan-nacional-cel {
 			display: block;
 		}
+
+
 	}
 
 	@media only screen and (min-width: 1024px) {
@@ -160,6 +169,9 @@
 			display: block;
 		}
 
+		.container__formCadastro {
+			height: auto;
+		}
 
 
 

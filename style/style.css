@@ -138,7 +138,13 @@
 
 	}
 
+	.cardplan-nacional-cadastro {
 
+		box-sizing: border-box;
+		background-color: var(--plano);
+		border-radius: var(--br-10xl);
+
+	}
 
 
 	.benef-plan-info {
@@ -310,8 +316,8 @@
 
 	.carousel-inner {
 		display: flex;
-		justify-content: space-between !important;
-		align-items: center !important;
+
+
 	}
 
 	.card-plan-nacional-desktop {
@@ -321,14 +327,6 @@
 	.card-plan-nacional-cel {
 		display: none;
 	}
-
-
-
-
-
-
-
-
 
 	.hello-bg {
 
@@ -350,7 +348,9 @@
 	}
 
 	.btn:hover {
-		transform: scale(1.1);
+
+		transform: scale(1.08);
+
 	}
 
 
@@ -455,7 +455,6 @@
 	}
 
 
-
 	.plus-fixed {
 
 		position: fixed;
@@ -534,7 +533,72 @@
 	}
 
 
+	.animebtnsocial:hover {
+		animation: girar 1s;
+	}
 
+
+
+	.img-anatel-footer {
+		width: 60px;
+		height: auto;
+	}
+
+	.anim-treme {
+
+		animation: treme 1.3s;
+		animation-iteration-count: infinite;
+	}
+
+
+
+
+
+
+
+	.oculto {
+		display: none;
+		transition: transform 1s;
+		animation: socialUp 1s alternate;
+
+
+	}
+
+
+
+	.mostrar {
+		display: block;
+		transition: 1s;
+		transition: transform 1s;
+		animation: socialUp 1s alternate;
+
+	}
+
+	.container__Cadastro {
+		width: 90vw;
+		height: 650px;
+	}
+
+	#step2,
+	#step3 {
+		display: none;
+	}
+
+	.container__formCadastro {
+		height: 700px !important;
+		background: var(--gradient-1);
+		color: var(--color-whitesmoke);
+	}
+
+
+	.card__cadastro {
+		text-align: center;
+		color: var(--color-orangered-100);
+		font-weight: 500;
+		margin: 15px;
+		padding: 30px;
+		background: var(--color-whitesmoke);
+	}
 
 	.anim-expandir {
 

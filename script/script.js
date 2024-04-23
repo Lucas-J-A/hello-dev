@@ -1,8 +1,37 @@
-//função para aparecer e esconder redes sociais !
-let el = document.getElementById('iconContainer');
-toggleBtn.addEventListener('click', function () {
-    (el.classList.contains("mostrar") == true) ? el.classList.remove("mostrar") : el.classList.add('mostrar');
-});
+
+// para steps do formulario
+var currentStep = 1;
+var totalSteps = 3;
+
+function nextStep() {
+    if (currentStep < totalSteps) {
+        var currentSection = document.getElementById("step" + currentStep);
+        currentSection.style.display = "none";
+
+        currentStep++;
+
+        var nextSection = document.getElementById("step" + currentStep);
+        nextSection.style.display = "block";
+    }
+}
+
+function previousStep() {
+    if (currentStep > 1) {
+        var currentSection = document.getElementById("step" + currentStep);
+        currentSection.style.display = "none";
+
+        currentStep--;
+
+        var previousSection = document.getElementById("step" + currentStep);
+        previousSection.style.display = "block";
+    }
+}
+
+function submitForm() {
+    // Lógica para enviar o formulário
+    document.getElementById("myForm").submit();
+}
+
 
 
 //Acordeon para aparecer os elementos 
@@ -56,3 +85,10 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     interval: 2000,
     touch: false
 })
+
+//função para aparecer e esconder redes sociais !
+let el = document.getElementById('iconContainer');
+toggleBtn.addEventListener('click', function () {
+    (el.classList.contains("mostrar") == true) ? el.classList.remove("mostrar") : el.classList.add('mostrar');
+});
+
